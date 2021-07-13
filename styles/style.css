@@ -89,3 +89,35 @@ Course Style
 .fa-star.filled{
     color:#FFC014;   
 }
+
+/* ------------
+Media Queeries
+------------- */
+/* -----------
+Mobible Devices
+---------------- */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        background-color: rgb(126, 196, 243);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+/* --------------
+Tablet Devices
+---------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .players, .courses{
+        background-color: rgb(19, 124, 209);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        width: 100%;
+    }
+    
+}
